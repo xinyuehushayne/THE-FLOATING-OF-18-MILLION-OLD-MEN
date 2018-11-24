@@ -1,0 +1,946 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Floating of 18 million Old Men</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="assets/js/echarts.min.js"></script>
+		
+	</head>
+	<body class="is-preload" style="background-color: #f8f8f1;font-family: STHeiti;font-size: 18px;">
+        <!-- 背景图pic0 -->
+       
+		 <div  style="background-color: #f8f8f1">
+            <img src="images/pic0 .png" style="width:100%;height: 100%" alt="" />
+             <div class="triangle"> </div>
+            <h2 style="color: rgba(18, 23, 24,0.7); position: absolute;top:25%;left:60%;font-size: 50px;font-family: Arial;font-weight: bold;" >The Floating of<br>18 million old men</h2>
+            <div class="triangle" style="font-color:black"></div>
+       
+		<!-- Page Wrapper -->
+       <!--  <section id="banner">
+			<div id="page-wrapper"> -->
+				<!-- Header -->
+					<!-- <header id="header" class="alt" >
+						<h1 style="color:#f8f8f1;">1800万的漂流</h1>
+					</header>
+            </div>
+        </section> -->
+   				<!-- Banner -->
+					<!-- <section id="banner" style="background-color: #f8f8f1">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-diamond"></span></div>
+							<h2 style="color: #0b393d;background-color: #f8f8f1">1800万的漂流</h2>
+						</div>
+					</section>
+                 -->
+				<!-- Wrapper -->
+					<section id="wrapper" style="background-color: #f8f8f1">
+
+						<!-- One 导语 -->
+							<section id="one" class="wrapper spotlight style3" style="background-color: #f8f8f1;">
+								<div class="inner" style="background-color: #f8f8f1">
+									<div class="content">
+										<p style="font-family: SimSun">Talking about floating people, what is the first thing that comes to your mind? Young people who work hard fighting for their dreams? Or rural migrant workers who work to support his family?</p>
+            							<p>There is such a group – over 60 years old and floating all over the country. They are called "old floaters" by the media because they are drifting away from their homeland. Also, because of language habits different from locals and distant interpersonal relationships with them, they are referred to as “invisible people in the city”.</p>
+            							<p>In the future, these people might be your parents, might be you. </p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two 图片pic07 -->
+							<section id="two" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+								<div class="trapezoid"> </div> 
+                                  <img src="images/pic07.jpg" style="width:100%" alt="" />
+                                <div class="triangle"> </div>
+							</section>
+
+						<!-- Three 第一部分 -->
+							<section id="three" class="wrapper spotlight style3" style="background-color: #f8f8f1">
+                                <div class="inner">
+                                <!-- <div class="wrapper spotlight style3"> -->
+									<div class="content">
+										<h1 style="color: #0b393d;background-color: #f8f8f1">1/12.3</h1>
+										<h3 class="major">There is one floating man in every 12.3 old men.</h2>
+										<p>As of 2015, up to 7.2% of China's 247 million floating population are people over 60 years old, with a total number of 18 million, which means that there is a floating man in every 12.3 old men.</p>	
+										<p>According to the 2016 China Floating Population Development Report, among the floating elderly, there are slightly more men than women; the elderly under 70 takes up 80%; most of the floating elderly are from rural areas, accounting for about 70%. Many floating elderly didn't go to secondary school, accounting for about 41%. Sichuan is currently the largest source, followed by Guangdong, Anhui, and Guizhou.</p>
+										<p>It is worth noting that the number of floating elderly has shown significant growth during the last 15 years. According to the National Family Planning Commission, under the combined influence of China's trend of aging population and the marriage within the floating community, the continuous increase in the number of migrants will become general.</p>
+									 <div id="container1" style="height: 500%;width: 100%"></div>
+                                            <script type="text/javascript">
+                                            var dom = document.getElementById("container1");
+                                            var myChart = echarts.init(dom);
+                                            var app = {};
+                                            option = null;
+                                            option = {
+                                                title: {
+                                                    text: 'The population of the floating elderly',
+                                                    subtext:'Source：《2016 China Floating Population Development Report》',
+                                                    left:'center',
+                                                    
+                                                },
+                                                tooltip: {
+                                                    trigger: 'axis',
+                                                    axisPointer: {
+                                                        type: 'none'
+                                                    },
+                                                    formatter: function (params) {
+                                                        return params[0].name + ': ' + params[0].value;
+                                                    }
+                                                },
+                                                xAxis: {
+                                                    data: ['2015', '2010', '2015' ],
+                                                    axisTick: {show: false},
+                                                    axisLine: {show: false},
+                                                    axisLabel: {
+                                                        textStyle: {
+                                                            color: '#000000'
+                                                        }
+                                                    }
+                                                },
+                                                yAxis: {
+                                                	// name:'million',
+
+                                                    splitLine: {show: false},
+                                                    axisTick: {show: false},
+                                                    axisLine: {show: false},
+                                                    axisLabel: {show: false}
+                                                },
+                                                // color: ['#e54035'],
+                                                 color: ['#e54035'],
+                                                series: [
+                                                    {
+                                                    name: 'hill',
+                                                    type: 'pictorialBar',
+                                                    barCategoryGap: '-130%',
+                                                    color:"#006766",
+                                                    // symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
+                                                    symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
+                                                    itemStyle: {
+                                                        normal: {
+                                                            opacity: 0.5
+                                                        },
+                                                        emphasis: {
+                                                            opacity: 1
+                                                        }
+                                                    },
+                                                    data: [8.469,9.344,18],
+                                                    z: 10
+                                                }, 
+                                                {
+                                                    data: [8.469,9.344,18],
+                                                    type: 'line',
+                                                    smooth:true,
+                                                    color:"#dcd0a1",
+                                                   label: {
+                                                        show: true,
+                                                        position: 'top',
+                                                        formatter: "{b}\n{c}million"
+                                                    }
+                                                }]};;
+                                            if (option && typeof option === "object") {
+                                                myChart.setOption(option, true);
+                                            }
+                                                   </script>
+									</div>
+								</div>
+							</section>
+							<!-- 插入图片pic08 -->
+						  <!-- <section id="five" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+									<div class="content">
+										
+									</div>
+								</div>
+							</section> -->
+                            <!-- 插入图片pic08 -->
+                            <section id="five" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+                                <div class="trapezoid"> </div> 
+                                  <img src="images/pic08 .jpg" style="width:100%" alt="" />
+                                <div class="triangle"> </div>
+                            </section>
+
+
+						<!-- 第二部分-->
+						<section id="three" class="wrapper spotlight style3" style="background-color: #f8f8f1">
+
+								<div class="inner">
+									<div class="content">
+					
+                                        <section class="features">
+                                        <article>
+                                            <h1>43%</h1>
+                                            <h3 class="major">Nearly half of the elderly float to take care of their children</h3>
+                                        <p>Mr.Du is an authentic Beijinger. He goes to Xinglong Park every morning and knows the situation very well. He said that he could tell whether an old man is local from appearance: "Listen, the reason why the elderly come to Beijing is that they have to take care of children." In 2015, the National Health and Family Planning Commission's special survey on floating elderly health services showed that taking care of the younger generation, better living conditions and business constitute the three primary reasons for the floating of the elderly. Among them, the proportion of taking care of the younger generation is 43%.
+</p>
+                                        </article>
+                                        <article style="height: 500%">
+                        <div id="container2" style="height: 350%;width: 130%"></div>
+                                         <script type="text/javascript">
+                                                var dom = document.getElementById("container2");
+                                                var myChart = echarts.init(dom);
+                                                var app = {};
+                                                option = null;
+                                                option = {
+                                                    title : {
+                                                        text: 'Reasons of Floating',
+                                                        subtext:'Source：《2016 China Floating Population Development Report》',
+                                                        x:'center'
+                                                    },
+                                                    tooltip : {
+                                                        trigger: 'item',
+                                                        formatter: "{a} <p/>{b} : {c} ({d}%)"
+                                                    },
+                                                    legend: {
+                                                        x : 'center',
+                                                        y : 'bottom',
+                                                        data:[{
+                                                            name:['taking care of children','better living conditions','business','others'],
+                                                            textStyle: {
+                                                            color:'white'
+                                                            } 
+                                                        }]
+
+                                                    },
+                                                    toolbox: {
+                                                        show : true,
+                                                        feature : {
+                                                            mark : {show: true},
+                                                            dataView : {show: false, readOnly: false},
+                                                            magicType : {
+                                                                show: true,
+                                                                type: ['pie', 'funnel']
+                                                            },
+                                                            restore : {show: false},
+                                                            saveAsImage : {show: false}
+                                                        }
+                                                    },
+                                                    calculable : false,
+                                                    series : [
+                                                        
+                                                        {
+                                                            name:'Reason',
+                                                            type:'pie',
+                                                            radius : [30, 110],
+                                                            center : ['50%', '50%'],
+                                                            roseType : 'area',
+                                                            data:[
+                                                                
+                                                                
+                                                                {value:4572000, name:'better living conditions'},                                                            
+                                                                {value:4050000, name:'business'},
+                                                                {value:7740000, name:'taking care of children'},
+                                                                {value:1638000, name:'others'}
+                                                            ],
+                                                            itemStyle: {
+                                                                                normal: {
+                                                                                    color: function(params) {
+                                                                                        var colorList = [
+                                                                                          '#c0b283','#dcd0c0','#006766','#dcd0a1'
+                                                                                        ];
+                                                                                        return colorList[params.dataIndex]
+                                                                                    },
+                                                                                 },
+                                                                        }
+                                                        }
+                                                    ]
+                                                };
+                                                ;;
+                                                if (option && typeof option === "object") {
+                                                    myChart.setOption(option, true);
+                                                }
+                                                       </script>
+                                        </article>
+                                </section>
+										
+										<p>Aunt Mei, 62, came to Beijing to take care of the younger generation, and she used to live alone in Wuhan from more than 1,000 kilometers away. She has been in Beijing for half a year, and the child in her arms is one year old. The baby would start crying whenever he felt uncomfortable. She held the child in one hand, pulled a paper towel, a small teddy bear and a toy phone from the stroller using another hand, wiped the baby and turned on the music, trying to make him happy. The baby stopped crying and fell asleep the moment music started. Aunt Mei gently put him in the stroller, turned and said in a smile, "He likes the music in the park, so I bring him here every morning." </p>
+										<p>Busy work and short maternity leave make it hard for people to look after their kids. </p>
+                                        <p></p>
+										<div id="container3" style="height: 500%;width: 100%"></div>
+										       <script type="text/javascript">
+                                                    var dom = document.getElementById("container3");
+                                                    var myChart = echarts.init(dom);
+                                                    var app = {};
+                                                    option = null;
+                                                    option = {
+                                                        title : {
+                                                            text: 'Maternity Leave Period all over the world ',
+                                                            subtext:'Source: Xinhua net',
+                                                            x: 'center',
+                                                            align: 'right'
+                                                        },
+                                                        grid: {
+                                                            bottom: 150,
+                                                            left: '20%',
+                                                            right:'20%'
+                                                        },
+                                                        toolbox: {
+                                                            feature: {
+                                                                dataZoom: {
+                                                                    yAxisIndex: 'none'
+                                                                },
+                                                                restore: {},
+                                                                saveAsImage: {}
+                                                            }
+                                                        },
+                                                        tooltip : {
+                                                            trigger: 'axis',
+                                                            axisPointer: {
+                                                                type: 'cross',
+                                                                animation: false,
+                                                                label: {
+                                                                    backgroundColor: '#505765'
+                                                                }
+                                                            }
+                                                        },
+                                                        legend: {
+                                                            data:['Women\'s Maternity Leave', 'Women\'s Paid Maternity Leave','Men\'s Maternity Leave', 'Men\'s Paid Maternity Leave'],
+                                                            bottom:50,
+                                                        },
+                                                        xAxis : [
+                                                            {
+                                                                type : 'category',
+                                                                boundaryGap : true,
+                                                                axisLine: {onZero: false},
+                                                                axisLabel: {  
+                                                                                                                                            
+                                                                       fontsize:1,                                                                       
+                                                                       interval:0,
+                                                                       rotate:30                                                                     
+                                                                        
+                                                                    } ,
+                                                                data : [
+                                                                  "France", "Germany", "Spain", "Austria", "Norway", "Swedish", "British", "Japan", "Ireland", "New Zealand", "Canada", "Australia", "Denmark", "Italy", "Greece", "Finland", "Portugal", "Netherlands", "Belgium", "China", "Switzerland", "Singapore", "United States"]
+                                                                  .map(function (str) {
+                                                                    return str.replace(' ', '\n')
+                                                                })
+                                                            }
+                                                        ],
+
+                                                        yAxis: [
+                                                            {
+                                                                name: 'weeks',
+                                                                type: 'value',
+                                                                max: 318,
+                                                                
+                                                            },
+                                                            {
+                                                                name: 'weeks',
+                                                                // nameLocation: 'start',
+                                                                max: 318,                                                                
+                                                                type: 'value',                                                                
+                                                                inverse: true
+                                                            }
+                                                        ],
+                                                         dataZoom: [
+                                                            {
+                                                                show: true,
+                                                                realtime: true,
+                                                                start: 0,
+                                                                end: 100
+                                                            },
+                                                            {
+                                                                type: 'inside',
+                                                                realtime: true,
+                                                                start: 65,
+                                                                end: 85
+                                                            }
+                                                        ],
+                                                        series: [
+                                                            {
+                                                            name:'Women\'s Maternity Leave',
+                                                            animation: true,
+                                                            type: 'bar',
+                                                            markArea: {
+                                                                    // silent: false,
+                                                                    itemStyle:{
+                                                                        color :'rgb(144,144,144,0.3)'
+                                                                    },
+                                                                    data: [[{
+                                                                        xAxis: 'Belgium'
+                                                                    }, {
+                                                                        xAxis: 'Switzerland'
+                                                                    }]]
+                                                                },
+                                                            itemStyle: {
+                                                                normal: {
+                                                                    color: '#006768'
+                                                                    // color:'#eb726f'
+                                                                }
+                                                            },
+                                                            silent: true,
+                                                            barWidth: 10,
+                                                            barGap: '-100%', // Make series be overlap
+                                                            data: [162,162,156,112,90,85,65,58,56,52,52,52,50,48,47,44,30,29,28,14,14,12,12]
+                                                        }, {
+                                                            name:'Women\'s Paid Maternity Leave',
+                                                            animation: true,
+                                                            type: 'bar',
+                                                            barWidth: 10,
+                                                            z: 10,
+                                                            itemStyle: {
+                                                                normal: {
+                                                                    // color: '#023'
+                                                                    color:'#023435'
+                                                                }
+                                                            },
+                                                            data: [20,42,16,16,38,40,12,26,22,14,29,0,19,25,34,29,17,16,15,14,11,8,0]
+                                                     },
+                                                    {
+                                                            name:'Men\'s Maternity Leave',
+                                                            yAxisIndex:1,
+                                                            type: 'bar',
+                                                            itemStyle: {
+                                                                normal: {
+                                                                    
+                                                                    color:'#dfd55d'
+                                                                }
+                                                            },
+                                                            silent: true,
+                                                            barWidth: 10,
+                                                            barGap: '-100%', // Make series be overlap
+                                                            data: [156,8,156,4,60,78,15,0,14,2,0,0,2,22,14,4,1,13,15,2,0,2,12]
+                                                        }, 
+                                                        {
+                                                            name:'Men\'s Paid Maternity Leave',
+                                                            yAxisIndex:1,
+                                                            type: 'bar',
+                                                            barWidth: 10,
+                                                            z: 10,
+                                                            itemStyle: {
+                                                                normal: {
+                                                                    
+                                                                    color:'#f5c464'
+                                                                }
+                                                            },
+                                                            data: [2,4,2,0,6,7,2,0,0,0,0,0,1,0,1,3,1,0,4,2,0,2,0]
+                                                        },
+                                                        ]
+                                                    };
+                                                    ;;
+                                                    if (option && typeof option === "object") {
+                                                        myChart.setOption(option, true);
+                                                    }
+                                                           </script>
+                                        <p></p>
+										<p>The high cost of the city's nanny has made some white-collar workers discouraged, and even if they can afford it, they are always worried about their babies. As a result, the parents seem to have become the perfect choice - no salaries and willing to do their best.</p>
+                                        <p></p>
+										<div id="container4" style="height: 500%;width: 100%"></div>
+                                         <script type="text/javascript">
+                                                var dom = document.getElementById("container4");
+                                                var myChart = echarts.init(dom);
+                                                var app = {};
+                                                option = null;
+                                                option = null;
+                                                app.title = '气泡图';
+
+                                                var data = [
+                                                    [['Beijing', 5183, 'Nannies\' Average Monthly Salary'], ['Guangzhou', 5164, 'Nannies\' Average Monthly Salary'], ['Shanghai', 6367, 'Nannies\' Average Monthly Salary'], ['Tianjin', 6178, 'Nannies\' Average Monthly Salary'], ['Chengdu', 6402, 'Nannies\' Average Monthly Salary'], ['Dalian', 6144, 'Nannies\' Average Monthly Salary'], ['Shenzhen', 8315, 'Nannies\' Average Monthly Salary '],['Changsha', 6186, 'Nannies\' Average Monthly Salary'], ['Chongqing', 6584, 'Nannies\' Average Monthly Salary'], ['Qingdao', 6057, 'Nannies\' Average Monthly Salary'], ['Zhengzhou', 6191, 'Nannies\' Average Monthly Salary'], ['Wuhan', 6331, 'Nannies\' Average Monthly Salary'], ['Nanjing', 6680, 'Nannies\' Average Monthly Salary'], ['Hangzhou', 7330, 'Nannies\' Average Monthly Salary'], ['Xi\'an', 5872, 'Nannies\' Average Monthly Salary'], ['Foshan', 7017, 'Nannies\' Average Monthly Salary'], ['Dongguan', 6998, 'Nannies\' Average Monthly Salary']],
+                                                    [['Beijing', 9240, 'Residents\' Average Monthly Salary'], ['Guangzhou', 7409, 'Residents\' Average Monthly Salary'], ['Shanghai', 8962, 'Residents\' Average Monthly Salary'], ['Tianjin', 5451 , 'Residents\' Average Monthly Salary'], ['Chengdu', 4867, 'Residents\' Average Monthly Salary'], ['Dalian', 4291, 'Residents\' Average Monthly Salary'], ['Shenzhen', 5258, 'Residents\' Average Monthly Salary '], ['Changsha', 3841, 'Residents\' Average Monthly Salary'], ['Chongqing', 4150, 'Residents\' Average Monthly Salary'], ['Qingdao', 5833, 'Residents\' Average Monthly Salary'], [ 'Zhengzhou', 4500, 'Residents\' Average Monthly Salary'], ['Wuhan', 4167, 'Residents\' Average Monthly Salary'], ['Nanjing', 5307, 'Residents\' Average Monthly Salary'], ['Hangzhou', 6000 , 'Residents\' Average Monthly Salary'], ['Xi\'an', 4267, 'Residents\' Average Monthly Salary'], ['Foshan', 5358, 'Residents\' Average Monthly Salary'], ['Dongguan', 5083, 'Residents\' Average Monthly Salary']]
+                                                ];
+
+                                                option = {
+                                                   
+                                                    title: {
+                                                        text: 'Nannies\' and Residents\' Average Monthly Salary',
+                                                        subtext:'Source: http://www.51baomu.cn',
+                                                        left:'center',
+                                                    },
+                                                    legend: {
+                                                        // right: 10,
+                                                        data: ['Nannies\' Average Monthly Salary', 'Residents\' Average Monthly Salary'],
+                                                        bottom:0
+                                                    },
+                                                    xAxis: {
+                                                            splitLine: {
+                                                                lineStyle: {
+                                                                    type: 'dashed'
+                                                                }
+                                                            },
+                                                            axisLabel:{
+                                                                 interval:0,
+                                                                 rotate:30
+                                                            },
+                                                        data: ['Beijing', 'Guangzhou', 'Shanghai', 'Tianjin', 'Chengdu', 'Dalian', 'Shenzhen', 'Changsha', 'Chongqing', 'Qingdao', 'Zhengzhou', 'Wuhan', 'Nanjing ', 'Hangzhou', 'Xi\'an', 'Foshan', 'Dongguan'],
+                                                    },
+                                                    yAxis: {
+                                                    	name:'yuan',
+                                                        splitLine: {
+                                                            lineStyle: {
+                                                                type: 'dashed'
+                                                            }
+                                                        },
+                                                        scale: true,
+                                                        min: 0,
+                                                        max: 10000
+                                                    },
+                                                    series: [
+                                                    {
+                                                            name:'HU',
+                                                            type:'bar',
+                                                            barWidth: '2',
+                                                            barGap:'-100%',
+                                                            itemStyle: {
+                                                            normal: {
+                                                                color: '#ffcc99'
+                                                            }
+                                                        },
+                                                            data:[5183,5164,6367,6178,6402,6144,8315,6186,6584,6057,6191,6331,6680,7330,5872,7017,6998]
+                                                        },
+                                                         {
+                                                            name:'XIN',
+                                                            type:'bar',
+                                                            barWidth: '2',
+                                                            barGap:'-100%',
+                                                            itemStyle: {
+                                                            normal: {
+                                                                color: '#ffcc99'
+                                                            }
+                                                        },
+                                                            data:[5183,5164,6367,,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                                                        },
+                                                        {
+                                                            name:'YUE',
+                                                            type:'bar',
+                                                            barWidth: '2',
+                                                            // barGap:'-100%',
+                                                            itemStyle: {
+                                                            normal: {
+                                                                color: 'green'
+                                                            }
+                                                        },
+                                                            data:[9240,7409,8962,5451,4867,4291,5258,3841,4150,5833,4500,4167,5307,6000,4267,5358,5083]
+                                                        },
+                                                                 {
+                                                            name:'le1',
+                                                            type:'bar',
+                                                            barWidth: '2',
+                                                            barGap:'-100%',
+                                                            itemStyle: {
+                                                            normal: {
+                                                                color: '#ffcc99'
+                                                            }
+                                                        },
+                                                            data:[5183,5164,6367,,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                                                        },
+                                                    {
+                                                        name: 'Nannies\' Average Monthly Salary',
+                                                        data: data[0],
+                                                        type: 'scatter',
+                                                        label: {
+                                                            emphasis: {
+                                                                show: true,
+                                                                formatter: function (param) {
+                                                                    return param.data[1];
+                                                                },
+                                                                position: 'top'
+                                                            }
+                                                        },
+                                                        itemStyle: {
+                                                            normal: {
+                                                                shadowBlur: 10,
+                                                                shadowColor: 'rgba(120, 36, 50, 0.5)',
+                                                                // shadowColor:'#DCD0C0',
+                                                                shadowOffsetY: 5,
+                                                                color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                                                                    offset: 0,
+                                                                    color: '#ffcc99'
+                                                                }, {
+                                                                    offset: 1,
+                                                                    color: '#ffcc99'
+                                                                }])
+                                                            }
+                                                        }
+                                                    }, {
+                                                        name: 'Residents\' Average Monthly Salary',
+                                                        data: data[1],
+                                                        type: 'scatter',
+                                                        label: {
+                                                            emphasis: {
+                                                                show: true,
+                                                                formatter: function (param) {
+                                                                    return param.data[1];
+                                                                },
+                                                                position: 'top'
+                                                            }
+                                                        },
+                                                        itemStyle: {
+                                                            normal: {
+                                                                
+                                                                color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                                                                    offset: 0,
+                                                                    color: 'green'
+                                                                }, {
+                                                                    offset: 1,
+                                                                    color: 'green'
+                                                                }])
+                                                            }
+                                                        }
+                                                      
+                                                    }
+                                                        
+                                                    ]
+                                                };;;
+                                                if (option && typeof option === "object") {
+                                                    myChart.setOption(option, true);
+                                                }
+                                                       </script>
+                                                       <p><p/>
+										<p>In this way, in their retirement, 7.74 million old men traveled long distances to the children's cities and started to take on the work of being "nanny" for their children. "I am burning my life and contributing." Aunt Mei said.</p>
+										  
+
+									</div>
+								</div>
+                                
+							</section>
+
+						<!--插入一张图片pic10-->
+                            <section id="two" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+                                <div class="trapezoid"> </div> 
+                                  <img src="images/pic10.jpg" style="width:100%" alt="" />
+                                <div class="triangle"> </div>
+                            </section>	
+						
+
+						<!--第三部分-->
+						<section id="one" class="wrapper spotlight style1" style="background-color: #f8f8f1">
+								<div class="inner">
+									<!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>-->
+									<div class="content">
+									<h1 >41%</h1>
+										<h3 class="major">It is difficult for a large number of floating elderly people to integrate into local communities.</h2>
+										<p>When the old man migrates to a strange city, it is like being "rooted up". Psychological loneliness is difficult to dissolve, and real "grafting" requires a long process.</p>
+										<p>First of all, the floating elderly face many difficulties in dealing with locals. After analyzing the data of China's comprehensive social survey, it can be seen that in a year, 41% of the floating elderly have only had several social entertainment activities with their neighbors, or never. 23.7% of the older adults said they were not familiar with the neighbors, and only 9.6% of the older adults thought they were very familiar with the neighbors.</p>
+									<section class="features" style="width: 100%;align-items: center">
+                                        <article>
+                                            <div id="container5" style="height: 500%;width: 100%"></div>
+                                         <script type="text/javascript">
+                                            var dom = document.getElementById("container5");
+                                            var myChart = echarts.init(dom);
+                                            var app = {};
+                                            option = null;
+                                            option = {
+                                                title: {
+                                                    text: 'How often do they hang out with neighbors?',
+                                                    subtext:'Source: CFPS',
+                                                    left:'center',
+                                                },
+                                                tooltip: {},
+                                                legend: {
+                                                    data: ['The Local Elderly', 'The Non-local Elderly'],
+                                                    bottom:30,
+                                                },
+                                                radar: {
+                                                    // shape: 'circle',
+                                                    name: {
+                                                        textStyle: {
+                                                            color: '#fff',
+                                                            backgroundColor: '#999',
+                                                            borderRadius: 3,
+                                                            padding: [3, 5]
+                                                       }
+                                                    //   lineStyle:[
+                                                    //       {
+                                                    //       name:'本地老人',
+                                                    //       color:"green"
+                                                    //   },
+                                                    //   {
+                                                    //       name:'外地老人',
+                                                    //       color :"black"
+                                                    //   }
+                                                    //   ]
+                                                    },
+                                                    indicator: [
+                                                       { name: 'never', max: 30},
+                                                       { name: 'less than once a year', max: 30},
+                                                       { name: 'a few times a year', max: 30},
+                                                       { name: 'once a month', max: 30},
+                                                       { name: 'a few times a month', max: 30},
+                                                       { name: 'once or twice a week', max: 30},
+                                                       { name: 'almost everyday', max: 30}
+                                                    ]
+                                                },
+                                                series: [{
+                                                    name: 'The Local Elderly vs The Non-local Elderly',
+                                                    type: 'radar',
+                                                //   itemStyle: {
+                                                //       normal: {areaStyle: {type: 'default'}},
+                                                       
+                                                //   },
+                                                   
+                                                    data : [
+                                                        {
+                                                            value : [26.1, 22.9, 16.2, 6.8, 10.4, 10.1, 7.5],
+                                                            name : 'The Local Elderly',
+                                                            itemStyle:{
+                                                                color:"rgb(9,102,102)"
+                                                            },
+                                                           lineStyle:{
+                                                            color:"rgb(9,102,102)",
+                                                            width:"3"
+                                                            
+                                                            }
+                                                        },
+                                                         {
+                                                            value : [14.6, 23, 13.5, 7.9, 13.5, 14.6, 12.9],
+                                                            name : 'The Non-local Elderly',
+                                                            itemStyle:{
+                                                                color:"#ffcc99"
+                                                            },
+                                                            lineStyle:{
+                                                            color:"#ffcc99",
+                                                            width:"3"
+                                                            }
+                                                        }
+                                                    ]
+                                                }]
+                                            };;;;
+                                            if (option && typeof option === "object") {
+                                                myChart.setOption(option, true);
+                                            }
+                                                   </script>
+                                        </article>
+                                        <article>
+                                            <div id="container6" style="height: 500%;width: 100%"></div>
+                                         <script type="text/javascript">
+                                                var dom = document.getElementById("container6");
+                                                var myChart = echarts.init(dom);
+                                                var app = {};
+                                                option = null;
+                                                option = null;
+                                                    option = {
+                                                    title: {
+                                                    text: 'How do they get along with neighbors?',
+                                                    subtext:'Source: CFPS',
+                                                    left:'center',
+                                                    },
+                                                    tooltip: {},
+                                                    legend: {
+                                                        data: ['The Local Elderly', 'The Non-local Elderly'],
+                                                        bottom:30
+                                                    },
+                                                    radar: {
+                                                    // shape: 'circle',
+                                                    name: {
+                                                    textStyle: {
+                                                    color: '#fff',
+                                                    backgroundColor: '#999',
+                                                    borderRadius: 3,
+                                                    padding: [3, 5]
+                                                    }
+                                                    //   lineStyle:[
+                                                    //       {
+                                                    //       name:'本地老人',
+                                                    //       color:"green"
+                                                    //   },
+                                                    //   {
+                                                    //       name:'外地老人',
+                                                    //       color :"black"
+                                                    //   }
+                                                    //   ]
+                                                    },
+                                                    indicator: [
+                                                    { name: 'Excellent', max: 40},
+                                                    { name: 'Good', max: 40},
+                                                    { name: 'Normal', max: 45},
+                                                    { name: 'Not so good', max: 20},
+                                                    { name: 'Bad', max: 6}
+                                                    ]
+                                                    },
+                                                    series: [{
+                                                    name: 'The Local Elderly vs The Non-local Elderly',
+                                                    type: 'radar',
+                                                    //   itemStyle: {
+                                                    //       normal: {areaStyle: {type: 'default'}},
+                                                    
+                                                    //   },
+                                                    
+                                                    data : [
+                                                    {
+                                                     value : [35.2,36.1,19.2,7.8,1.7],
+                                                    name : 'The Local Elderly',
+                                                    itemStyle:{
+                                                        color:"rgb(9,102,102)"
+                                                    },
+                                                    lineStyle:{
+                                                    color:"rgb(9,102,102)",
+                                                    width:"3"
+                                                    
+                                                    }
+                                                    },
+                                                    {
+                                                    value : [9.6,28.1,38.6,18.4,5.3],
+                                                    name : 'The Non-local Elderly',
+                                                    itemStyle:{
+                                                        color:"#ffcc99"
+                                                    },
+                                                    lineStyle:{
+                                                    color:"#ffcc99",
+                                                    width:"3"
+                                                    }
+                                                    }
+                                                    ]
+                                                    }]
+                                                    };;;;
+                                                if (option && typeof option === "object") {
+                                                    myChart.setOption(option, true);
+                                                }
+                                                       </script>        
+                                        </article>
+                                    </section>
+                                        
+										
+										<p>Here is the life of Aunt Wang, who is 65 years old. In these years, she traveled between two provinces, Inner Mongolia and Hebei. She firstly helped her daughter to bring her first grandson up, then went to help her son with grandchildren, and then came back to help her daughter with the third grandchildren. Every day, she gets up early to do some grocery shopping, then prepares breakfast before the children get up. Aunt Wang takes care of her grandson at home, does the housework, and prepares for food, all alone. She is busy going from bedroom to living room, from the living room to the kitchen, day after day. Aunt Wang nearly went out these years. For one, she was in a strange city, so she didn’t know anyone. For another, she had too many chores and had to take care of her children. Aunt Wang said that she has some close friends, but she has not met with them for two years. If the children offer to take a walk outside, she will go out; If the children do not bring her, she will not either.
+										<p>
+										With the one-child family structure in China, there are many Aunt Meis. They were taken away from the original social network, taking on daily housework, taking care of the younger generations, and having little leisure time, limiting their participation in social activities. Besides, the floating elderly may have language barriers. If the culture of the inflowing and outflowing areas is different, it will be more difficult for them to adapt. Under the influence of the household registration system, the floating elderly cannot enjoy a lot of treatments for the locals, leading to a psychological weakness that further weakens psychological motivation to communicate.
+										<p>
+										Although Aunt Mei does not have language problems and does not need to go to the hospital, she cannot adapt to Beijing thoroughly. Recalling the life in her hometown of Wuhan, she swiped the photo in her mobile phone, something glittering in her eyes. She was not happy with the life in Beijing. She always said that Beijing is terrible. If someone asks why it is not good, she will shake her head and wave her hand. "It is a real mess!" And then, she will criticize the climate, traffic, and environment of Beijing. She said with a little excitement, "In Wuhan, the streets are clean, the air is humid, and there has never been a sandstorm. When you walk down the street, the drivers will definitely stop to give way to you. I have never seen anyone occupying the blind road... Who wants to come to Beijing? My buddies in Wuhan ask me to go back and play poker every day, 'Mei, come back soon please, it is no fun without you!'"
+										<p>
+										In fact, elderly Chinese people like Aunt Wang and Aunt Mei, who are unable to adapt to the inflowing environment, are not only in many areas in China but also abroad. They are suffering from greater loneliness. Aunt Mei once lived in the United States for half a year and also helped her relatives bring their children up. In the United States, she was unfamiliar with the conditions, so she stayed at home alone with children during the day, and didn’t dare to answer the door. She said that many Chinese parents were helping their children take care of their children. Due to the validity of the visa, the elderly can only stay there for half a year. Combined with the high cost of living in the United States, a lot of people choose to make their parents take turns to go abroad. In the first six months, the old father took care of his grandson in a foreign country, and the old mother lived alone in China. In the next six months, they would exchange their positions. This kind of lifestyle will last for several years. Aunt Mei sighed: "When I was in the United States, I really wanted to go back to China. East, west, home is best. I missed Wuhan’s crayfish most."</p>	
+										<!--<a href="#" class="special">Learn more</a>-->
+									</div>
+								</div>
+							</section>
+							<!--插入一张图片pic09-->
+                            <section id="two" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+                                <div class="trapezoid"> </div> 
+                                  <img src="images/pic09.jpg" style="width:100%" alt="" />
+                                <div class="triangle"> </div>
+                            </section>
+						<!-- <section id="five" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+								<div class="inner">
+									<img src="images/pic09.jpg" alt="" />
+									
+								</div>
+							</section> -->
+						<!--第四部分-->
+						<section id="one" class="wrapper spotlight style1" style="background-color: #f8f8f1">
+								<div class="inner">
+									<!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>-->
+									<div class="content">
+									<h1>69% ↓ </h1>
+										<h2 class="major">Loneliness behind reunion</h2>
+										<p>In the process of interacting with family, migrants also have a sense of belonging.</p>
+										<p>After analyzing the data of China's follow-up survey, it was found that the spouse became the main chatter of the floating elderly, and even if they shared the same roof with their children, few interviewees chatted with them.</p>
+										<p>The children of Aunt Wang insisted on the traditional concept that the widowed mother should live with them. Aunt Wang does not have her own house and lives in the children's home all year round. Sometimes, Aunt Wang feels that she is not used to living with children. The two generations have different ideas, causing them uneasy. She missed her friends in her hometown and thought about renting a house. However, she gave up quickly because she didn't want her children to waste money. Plus, she has led this kind of life for many years, so she doesn't want to change the status quo.</p>
+										<p>According to The Sociological Analysis of the Urban Adaptability of the Elderly Migrant Population, which was published in the Chinese Journal of Gerontology, 69% of the elderly were more optimistic about their lives before they moved to live with their kids. They thought they could have a good time with children. And about 23% of the elderly were willing to live in their children's living city in retirement. However, after living in their children's home for a period, these two ratios reduced significantly.</p>
+										<p>In the eyes of relatives and friends, Aunt Wang always smiles kindly. When asked how to maintain a harmonious family relationship, she sighed: "I eat what they don’t eat and do what they don't do. How can there be any contradictions?" Sometimes she couldn't understand the behavior of children such as staying up, so Wang Aunt always comforts herself that times are changing, and reminds herself not to interfere too much with her children's family.</p>
+										<p>The subtle changes in family relationships are happening in thousands of migrant families. On the one hand, in this fast-paced era, new things brought about by science and technology are overwhelmed. Young people’s dependence on parents’ experience, cognitive ability, economic capability, and living ability declined with age. Parents have to rely on their kids in turn. As a result, the traditional parental authority has gone. On the other hand, in recent decades, China has undergone many great changes. The life experience of the two generations is very different, which has aggravated the communication difficulty of them. Modern society is full of nuclear families, with husband, wife and their unmarried children, emphasizing independence and privacy. However, independence and privacy weaken the relationship between the two generations. In the case of intergenerational coexistence, the elderly come to their children's homes, and sometimes trivial matters will bring about family conflicts, thus aggravating the loneliness of the floating elderly.</p>
+										<p>“'Invisible old people' has now formed a certain scale in the community. They leave their familiar environment and come to unfamiliar cities. Identity and mental cognition bring social behavior hindrance, so that there may be problems with mental depression and homogeneity.” Zhou Jun, a Chinese Youth Politics College teacher who majored in psychology at Beijing Normal University said. "Psychological health and mental illness have a solid relationship with the degree of support within interpersonal relationships. An old man who is moving in the future faces a new life of 'rooted up' and lacks interpersonal support. Unfortunately, in most cases, there is no one to talk with."</p>	
+										<!--<a href="#" class="special">Learn more</a>-->
+									</div>
+								</div>
+							</section>
+							<!--插入一张图片-->
+						<!-- 插入一张图片 -->
+							<section id="four" class="wrapper alt style1">
+                                <div class="inner">
+                                    <section class="features">
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                                            <p>After escorting grandson to the kindergarten, the old man stood at the door.</p>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                                            <p>In the dining hall, an old woman is helping her children to feed the baby.</p>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                                            <p>The little girl was not willing to leave the kindergarten. The old man did not persuade her to go but accompanied her.</p>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                            <p>Aunt Mei and her friends in the United States. They were all taking care of their grandchildren.</p>
+                                        </article>
+                                    </section>
+                                </div>
+                            </section>
+					</section>
+
+							<!--第五部分-->
+						<section id="one" class="wrapper spotlight style1" style="background-color: #f8f8f1">
+								<div class="inner">
+									<!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>-->
+									<div class="content">
+									<h1 >1/45873.3</h1>
+										<h3 class="major">More than 40000 migrants in one designated hospital</h2>
+										<p>Economically, the self-supporting ability of the floating elderly is obviously insufficient. According to one survey, only about one-third of floating older adults rely mainly on pensions and savings to maintain their lives, while 34.5% of migrants depend mainly on their children.</p>
+										<p>In terms of medical insurance, although nearly 90% of the elderly hold various medical insurance, 92.9% of the insurance is bought in their hometown. In December 2017, all the provincial administrative regions in China have participated in the unified nationwide reimbursement network for medical treatment. In theory, medical treatment in the country can be directly reimbursed in a different province, but what about the facts?</p>
+                                        <p>To get reimbursement in a different place, people still need to go back to the designated department where the insurance is bought for application and filing. The number of designated agencies in some areas is small, and there is only one designated filing agency in some provinces. Besides, there are specific requirements for the residence time, and it is compulsive for the residents to hand in temporary residence permits and other documents. The process is more than cumbersome.</p>	
+                                        <p></p>
+										<div><!--经办机构分布-->
+                                            <div class='tableauPlaceholder' id='viz1541666094697' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_4149&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='1_4149&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_4149&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                
+                                            <script type='text/javascript'>                    var divElement = document.getElementById('viz1541666094697');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                                            </script>
+                                        </div>
+										<p>Second, medical insurance is not valid in every hospital. The government has designated some hospitals for medical insurance, and this insurance is not valid in other hospitals. Up to now, the number of designated medical institutions across the country is 9575, and more than 90% of tertiary medical institutions have joined the nationwide medical insurance network.</p>								
+										<p>However, the distribution of designated hospitals is not balanced. For example, in Fujian Province, every designated hospital hosts 45873.3 migrants from other provinces. </p>
+
+										<div class='tableauPlaceholder' id='viz1541418182332' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;th&#47;theratio&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='theratio&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;th&#47;theratio&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>               
+                                         <script type='text/javascript'>                    var divElement = document.getElementById('viz1541418182332');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+										<p></p>
+                                        <p>What's more, the proportion of reimbursement for medical insurance of other regions is generally lower than that of the participating areas. Some areas may reduce the portion of compensation and set the maximum reimbursement limit for medical insurance of other regions. </p>
+										<p>Finally, cross-provincial medical treatment is directly suitable for inpatients and not ideal for outpatients.</p>
+										<p>Aunt Ding, a native of Liaoning who now lives in Shijiazhuang, participated in the new rural cooperative medical system in her hometown. She pays 100 yuan a year and is only reimbursed 30% in medical treatment in other provinces. The transportation fee from Shijiazhuang to her hometown is at least 600 yuan. The elderly feel that the reimbursement is far from enough, so usually choose to go to the pharmacy to buy medicine for self-treatment. This fact increases the medical burden of floating elderly, and what’s more, directly leads them to choose to minimize medical expenses, which has become a hidden danger to their health.</p>
+
+										<!--<a href="#" class="special">Learn more</a>-->
+									</div>
+								</div>
+							</section>
+						<!-- <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a> -->
+					</section>
+
+                    <!-- 插入图片pic05 -->
+					<section id="two" class="wrapper alt spotlight style2" style="background-color: #f8f8f1">
+                                <div class="trapezoid"> </div> 
+                                  <img src="images/pic05.jpg" style="width:100%" alt="" />
+                                <div class="triangle"> </div>
+                        </section>
+
+					<section id="five" class="wrapper alt spotlight style2" style="background-color: #f8f8f1;font-size:15px;">
+								<div class="inner">
+									<div class="content">
+									<p>References
+
+									<br>[1] "China Floating Population Development Report 2016"
+                                    <br>[2] China Floating Population Development Report 2017
+                                    <br>[3] "Beijing Social Governance Development Report (2016 ~ 2017)"
+                                    <br>[4] Miao Ruifeng. Sociological Analysis of Urban Adaptability of Old Floating Population[J]. Chinese Journal of Gerontology, 2012, 32(18): 4095-4097.
+                                    <br>[5] Li Fang, Gong Weibin, Li Yaojun. An Analysis of the Factors Affecting the Residents' Willingness to Stay in the Elderly——From the Perspective of Bourdieu Theory[J]. Population and Society, 2016, 32(04): 3-12.
+                                    <br>[6] Liu Yana. The Difficulties and Countermeasures of the Old Floating People's Society in the Perspective of Community——Based on the Qualitative Research of the Beijing Community's “Northern Floating Old Man”[J].Social Security Research,2016(04):34-43.
+                                    <br>[7] Liu Ying. An Empirical study on the characteristics and impact of elderly population migration in China [D]. Capital University of Economics and Business, 2014.
+                                    <br>[8]Wang Shibin, Shen Qunxi, Wang Mingzhong. An Empirical Study of Social Participation of Migrants from a Comparative Perspective[J],2015,30(05):44-51+80.
+                                    <br>[9] Li Sheng, Huang Zaoyu. Analysis of the Flow and Life Characteristics of the Flowing Old People in Super Large Cities——Based on the Investigation of the Floating Family in the North and the Guangzhou-Shenzhen[J]. Research World, 2018(02): 3-9.
+                                    <br>[10] August 4, 2017, Yangguang News "18 million! These floating old people are living a life of ‘rooted up’..."
+                                        </p>
+	
+									</div>
+								</div>
+							</section>
+				<!-- Footer -->
+					<section id="footer" style="background-color: #f8f8f1">
+						<!-- <div align="right"> -->
+                        <div  style="padding :0 200px 50px 800px">
+                               <p><em> &copy;</em>| Xinyue Hu<br>
+							     </p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
